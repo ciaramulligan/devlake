@@ -58,7 +58,7 @@ var _ interface {
 ## Features
 
 - **Multi-platform support**: Works with both GitHub PRs and GitLab MRs
-- **Multi-tool support**: Supports CodeRabbit, Qodo, Gemini Code Assist, Fullsend, and Cursor Bugbot, with extensibility for additional AI review tools
+- **Multi-tool support**: Supports CodeRabbit, Qodo, Gemini Code Assist, Fullsend, and Cursor Bugbot
 - **AI-assisted commit classification**: Precomputes which commits were authored with Cursor/Claude/Copilot/CodeRabbit (from git trailers) into `ai_commits`.
 - **Per-team configuration**: Teams can configure which AI tools they use and customize detection patterns
 - **Prediction accuracy tracking**: Tracks AI predictions against actual outcomes (CI failures, bugs, rollbacks)
