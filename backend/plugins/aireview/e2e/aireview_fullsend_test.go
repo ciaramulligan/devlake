@@ -33,7 +33,7 @@ import (
 //
 // Fixture data is based on real comments from packit/ogr:
 //   - PR #1010 comment 5368024626: review by fullsend-ai-review[bot]
-//   - PR #995 comment 5115522730: fix by fullsend-ai-coder[bot]
+//   - PR #1010 comment 5115522730: fix by fullsend-ai-coder[bot] (original comment from PR #995)
 func TestExtractFullsendAiReviews(t *testing.T) {
 	var plug impl.AiReview
 	dataflowTester := e2ehelper.NewDataFlowTester(t, "aireview", plug)
