@@ -84,13 +84,13 @@ func TestExtractFullsendAiReviews(t *testing.T) {
 		}
 	}
 
-	// Review comment from fullsend-ai-review[bot] — structured findings with Medium severity.
+	// Review comment from fullsend-ai-review[bot] — structured findings with "breaking" keyword → High risk.
 	if review, ok := byComment["github:GithubPrComment:1:5368024626"]; ok {
 		if review.AiToolUser != "fullsend-ai-review[bot]" {
 			t.Errorf("expected AiToolUser=fullsend-ai-review[bot], got %s", review.AiToolUser)
 		}
-		if review.RiskLevel != models.RiskLevelMedium {
-			t.Errorf("review comment should be medium risk (moderate keyword), got %s", review.RiskLevel)
+		if review.RiskLevel != models.RiskLevelHigh {
+			t.Errorf("review comment should be high risk (breaking keyword), got %s", review.RiskLevel)
 		}
 	} else {
 		t.Error("review comment from fullsend-ai-review[bot] not found in results")
